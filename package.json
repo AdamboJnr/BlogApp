@@ -1,0 +1,27 @@
+{
+  "name": "blogapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdamboJnr/BlogApp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AdamboJnr/BlogApp/issues"
+  },
+  "homepage": "https://github.com/AdamboJnr/BlogApp#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^6.8.1",
+    "morgan": "^1.10.0"
+  }
+}
