@@ -3,12 +3,16 @@ const app = express();
 const blog = require('./routes/blog');
 const connectDB = require('./db/connect');
 const  mongoose  = require('mongoose');
+const errorHandlerMiddleware = require('./middleware/error-handler');
 require('dotenv').config();
 
 app.use(express.json());
 
 // Routes
 app.use('/', blog);
+
+// Middleware
+app.use(errorHandlerMiddleware);
 
 
 const PORT = process.env.PORT || 3000;
